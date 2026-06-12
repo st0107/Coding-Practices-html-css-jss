@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000003936_1719557332_background.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/* Top Section - Flexbox with left and right aligned items */
+
+.top , .center , .bottom {
+  display: flex;
+  
+}
+
+.top {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.top__left {
+  background-color: #ff6b6b;
+  padding: 20px;
+  flex: 0 0 auto;
+  color: white;
+  font-weight: bold;
+}
+
+.top__right {
+  background-color: #4ecdc4;
+  padding: 20px;
+  flex: 0 0 auto;
+  color: white;
+  font-weight: bold;
+}
+
+/* Center Section - Centered container with flexible width */
+.center {
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex: 1;
+  gap: 20px;
+}
+
+.center__container {
+  background-color: #ffd93d;
+  padding: 40px;
+  flex: 0 1 auto;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* Bottom Section - Flexbox with left and right aligned items */
+.bottom {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.bottom__left {
+  background-color: #95e1d3;
+  padding: 20px;
+  flex: 0 0 auto;
+  color: white;
+  font-weight: bold;
+}
+
+.bottom__right {
+  background-color: #f38181;
+  padding: 20px;
+  flex: 0 0 auto;
+  color: white;
+  font-weight: bold;
+}
